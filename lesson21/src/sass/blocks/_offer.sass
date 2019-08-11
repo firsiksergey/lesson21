@@ -1,0 +1,86 @@
+.offer 
+  padding: 55px 0 90px 0
+  background: url('../img/block2/3blockbigpic.png') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    background-color: white
+    top: 0
+    left: 0
+  &-bottom
+    display: flex
+    justify-content: space-between
+    margin-top: 27px
+    font-size: 15px
+    line-height: 24px
+  &-tel 
+    +bold 
+    text-decoration: none
+    color: black
+  &-block 
+    box-sizing: border-box
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    max-width: 360px
+    line-height: 35px
+    margin-bottom: 22px
+  &__subtitle
+    display: block
+    font-size: 16px
+    margin-bottom: 30px
+  &__input 
+    margin-bottom: 30px
+    width: 180px
+    &:first-child
+      margin-right: 10px
+  &__button 
+    width: 100%
+    min-height: 70px
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input
+      width: 234px
+      margin-bottom: 10px
+    &__button
+      font-size: 12px
+@media (max-width: 768px)
+  .offer
+    box-sizing: border-box
+    background: #ffffff
+    &__button
+      width: 294px
+    &-block 
+      width: 100%
+      padding: 0
+@media (max-width: 575px) 
+  .offer
+    padding: 34px 0 50px 0
+    &__title
+      font-size: 19px
+      line-height: 21px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 14px
+    &__button 
+      box-sizing: border-box
+      width: 275px
+      font-size: 14px
+      padding: 18px 35px
+    &__input
+      width: 215px
+      margin-bottom: 8px
+    &-bottom 
+      display: inline-block
+      margin-top: 20px
+      &__two
+        margin-top: 10px
+    &-tel 
+      

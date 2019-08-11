@@ -1,0 +1,78 @@
+body 
+  +reg
+.container 
+  width: 1170px
+  margin: auto
+img 
+  max-width: 100%  
+.logomini
+  display: none
+@media (max-width: 1200px)
+  .container
+    max-width: 768px
+    width: 95%
+  .hero
+    &-image 
+      max-width: 300px
+    &-block 
+      flex-direction: column 
+    &-list 
+      margin-bottom: 44px
+    &-text 
+      padding-right: 50px  
+
+
+  
+@media (max-width: 768px) 
+  .container
+    max-width: 576px
+    width: 95% 
+  .navbar
+    &__contacts
+      display: none  
+@media (max-width: 575px) 
+  .container
+    max-width: 277px
+    width: 95% 
+  .navbar
+    &__contacts
+      display: none 
+    .button
+      font-size: 10px
+      padding: 15px 26px
+      border-radius: 6px
+      margin: 10px 0
+  .logomini
+    display: initial
+  .logobig 
+    display: none
+
+.button
+  border-radius: 10px
+  background-color: $main-color
+  border: none 
+  padding: 18px 29px
+  font-family: 'Museo Sans Bold'
+  outline: none
+  &:hover
+    background-color: lighten($main-color, 20%)
+    cursor: pointer
+.section
+  &-title  
+    font-size: 24px
+    +bold
+.input 
+  border: 1px solid #dddddd
+  padding: 23px 29px
+  font-size: 15px
+  border-radius: 10px
+  &:focus 
+    border: 1px solid $main-color
+    outline: none
+#up
+  &-button
+    position: fixed
+    bottom: 20px
+    left: 20px
+    cursor: pointer
+    
